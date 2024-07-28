@@ -25,9 +25,9 @@ class User extends BaseController
         helper('form');
         $data = [];
 
-        if ($this->request->getMethod() != 'post') {
-            return $this->fail('Only post request is allowed');
-        }
+        // if ($this->request->getMethod() != 'post') {
+        //     return $this->fail('Only post request is allowed');
+        // }
 
         $rules = [
             'firstname' => ['rules' => 'required|min_length[3]|max_length[20]', 'label' => 'First Name'],
